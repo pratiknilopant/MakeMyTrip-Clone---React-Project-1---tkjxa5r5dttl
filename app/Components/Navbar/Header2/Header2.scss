@@ -3,7 +3,7 @@
 	width: 100%;
 	z-index: 9999;
 	position: fixed;
-	background: #fff;
+	background: linear-gradient(to bottom, #051322, #15457c);
 	box-shadow: 0 2px 5px #2525254b;
 
 	.header2 {
@@ -23,6 +23,14 @@
 			img {
 				height: 70%;
 			}
+		}
+
+		.icon {
+			color: #fff !important;
+		}
+
+		span {
+			color: #fff;
 		}
 		.navigation-wrapper-2 {
 			height: 60px;
@@ -72,10 +80,10 @@
 				border-radius: 5px;
 				font-size: 0.7rem;
 				font-weight: 600;
-				color: #000;
+				color: #000000 !important;
 				height: 90%;
 				gap: 10px;
-				background: #fff;
+				// background: #fff;
 
 				.user-name {
 					font-size: 15px;

@@ -20,6 +20,7 @@ import {
 import { RiHotelLine } from "react-icons/ri";
 import { AiOutlineCar } from "react-icons/ai";
 import { VscGraphLine } from "react-icons/vsc";
+import BasicModal from "../Header1/Demo";
 
 const Header2 = () => {
   // const { auth, userData } = useSelector(state => state.user.user);
@@ -28,8 +29,8 @@ const Header2 = () => {
     <section className="header2-wrapper">
       <div className="header2">
         <Link className="logo" to={"/"}>
-          <img
-            src="https://github.com/GitsOfVivek/MakeMyTrip-Clone/blob/main/client/src/assets/img/logo2.png?raw=true"
+        <img
+            src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png"
             alt="logo-mmt"
           />
         </Link>
@@ -139,12 +140,12 @@ const Header2 = () => {
 				</div> */}
         <div className="right-sec">
           <div className="login">
-            <img
+            {/* <img
               src="https://raw.githubusercontent.com/GitsOfVivek/MakeMyTrip-Clone/b862e8a1c392c93ab828bd47fc8b73e1aaf7e7f0/client/src/assets/img/makemytrip2.svg"
               className="cropped-img"
               alt="myTrip"
-            />{" "}
-            <span>Login or Create Account</span>
+            />{" "} */}
+            <BasicModal />
             <BiChevronDown className="down-arrow" />
           </div>
         </div>

@@ -1,7 +1,10 @@
-"use client"
+"use client";
 import { BrowserRouter } from "react-router-dom";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import { AuthProvider } from "./Components/provider/AuthProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,9 +16,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <BrowserRouter>
-        <body className={inter.className}>{children}</body>
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <AuthProvider>
+            <body className={inter.className}>{children}</body>
+          </AuthProvider>
+        </BrowserRouter>
+      </Provider>
     </html>
   );
 }

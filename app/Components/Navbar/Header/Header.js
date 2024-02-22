@@ -18,6 +18,7 @@ const Header = () => {
 	};
 
 	return isScrolled ? <Header2/> : <Header1 />;
+
 };
 
 export default Header;
